@@ -48,6 +48,7 @@ const checkGuess = (e) => {
 	}
 	if (remaining.innerText == 0) {
 		lowerCount("Too Many Chances, You Lose!");
+        displayAlert("YOU LOSE!!")
 	}
 	console.log("working");
 };
