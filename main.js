@@ -29,6 +29,7 @@ const checkGuess = (e) => {
         window.alert("Please choose from 1 to 100, inclusively.");
     }else if (guess == answer) {
         displayAlert("YOU WIN!!!!");
+        document.getElementById("image").src="hat.png";
 	} else if (guess < answer) {
         displayAlert("Nope! Guess Higher!");
         count-=1;
