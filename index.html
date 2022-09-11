@@ -14,14 +14,14 @@
         </video>
         <div class="content-wrapper">
             <h1 class="title">Guess The Number (1-100)</h1>
-            <p class="alert">Nope! Guess Higher!</p>
+            <p id="alert">Nope! Guess Higher!</p>
             <form class="form">
                 <div class="form-control">
                     <input type="number" id="guess" name="guess" placeholder="Guess" >
-                    <button type="button" class="check">check</button>
+                    <button type="button" id="check-btn" class="check-btn">check</button>
                 </div>
                 <img src="./hat1.png" alt="Kitten inside a magic hat">
-                <p class="attempts">Attempts Remaining: <span class="counter">3</span></p>
+                <p class="attempts">Attempts Remaining: <span id="remaining">3</span></p>
             </form>
         </div>
     </div>
@@ -30,6 +30,6 @@
 
 
 
-
+    <script src="main.js"></script>
 </body>
 </html>
