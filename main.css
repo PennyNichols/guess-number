@@ -128,3 +128,8 @@ span{
 .one{
     color: red; 
 }
+
+.alert{
+    text-align: center;
+    margin-bottom: 1rem;
+}
