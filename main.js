@@ -6,7 +6,7 @@ const checkBtn = document.getElementById("check-btn");
 let count = 3;
 
 function pickNumber(min, max) {
-	return Math.floor(Math.random() * 100);
+	return Math.floor(Math.random() * 100 + 1);
 }
 
 console.log(answer);
@@ -48,7 +48,7 @@ const checkGuess = (e) => {
 	}
 	if (remaining.innerText == 0) {
 		lowerCount("Too Many Chances, You Lose!");
-        displayAlert("YOU LOSE!!")
+		displayAlert("YOU LOSE!!");
 	}
 	console.log("working");
 };
