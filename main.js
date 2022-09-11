@@ -3,55 +3,52 @@ const remaining = document.getElementById("remaining");
 const alert = document.querySelector(".alert");
 const form = document.querySelector(".form");
 const checkBtn = document.getElementById("check-btn");
-let count=3;
+let count = 3;
 
 function pickNumber(min, max) {
-    return Math.floor(Math.random() * 100);
-};
+	return Math.floor(Math.random() * 100);
+}
 
 console.log(answer);
 
-function displayAlert (text) {
-    alert.textContent = text;
-};
+function displayAlert(text) {
+	alert.textContent = text;
+}
 
-function lowerCount (text) {
-    remaining.textContent=text;
-};
-
-
-
+function lowerCount(text) {
+	remaining.textContent = text;
+}
 
 const checkGuess = (e) => {
-    e.preventDefault();
-    let guess = document.getElementById("guess").value;
-    if(guess <= 0 || guess > 100){
-        window.alert("Please choose from 1 to 100, inclusively.");
-    }else if (guess == answer) {
-        displayAlert("YOU WIN!!!!");
-        document.getElementById("image").src="hat.png";
+	e.preventDefault();
+	let guess = document.getElementById("guess").value;
+	if (guess <= 0 || guess > 100) {
+		window.alert("Please choose from 1 to 100, inclusively.");
+	} else if (guess == answer) {
+		displayAlert("YOU WIN!!!!");
+		document.getElementById("image").src = "hat.png";
 	} else if (guess < answer) {
-        displayAlert("Nope! Guess Higher!");
-        count-=1;
-        lowerCount(count);
-        if (count == 2){
-            remaining.classList.add("two");
-          } else if (count == 1){
-            remaining.classList.add("one");
-        };        
-    } else if (guess > answer) {
-        displayAlert("Nope! Guess Lower!");
-        count-=1;
-        lowerCount(count);
-        if (count == 2){
-            remaining.classList.add("two");
-          } else if (count == 1){
-            remaining.classList.add("one");
-        };        
-	};
-    if(remaining.innerText == 0){
-        lowerCount("Too Many Chances, You Lose!");
-    };
+		displayAlert("Nope! Guess Higher!");
+		count -= 1;
+		lowerCount(count);
+		if (count == 2) {
+			remaining.classList.add("two");
+		} else if (count == 1) {
+			remaining.classList.add("one");
+		}
+	} else if (guess > answer) {
+		displayAlert("Nope! Guess Lower!");
+		count -= 1;
+		lowerCount(count);
+		if (count == 2) {
+			remaining.classList.add("two");
+		} else if (count == 1) {
+			remaining.classList.add("one");
+		}
+	}
+	if (remaining.innerText == 0) {
+		lowerCount("Too Many Chances, You Lose!");
+	}
 	console.log("working");
 };
 
