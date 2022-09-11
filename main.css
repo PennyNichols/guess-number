@@ -58,6 +58,9 @@
 .form{
     width: 28rem;
     margin: 0 auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-control{
@@ -107,7 +110,8 @@ input[type=number] {
 
 img{
     height: 20rem;
-    margin: 3rem 0;
+    margin: 3rem auto;
+    transition: all 2s ease-in-out;
 }
 
 .attempts, span{

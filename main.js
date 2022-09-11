@@ -5,6 +5,9 @@ const form = document.querySelector(".form");
 const checkBtn = document.getElementById("check-btn");
 let count = 3;
 
+let vid = document.getElementById("myVideo");
+vid.playbackRate = 0.5;
+
 function pickNumber(min, max) {
 	return Math.floor(Math.random() * 100 + 1);
 }
