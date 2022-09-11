@@ -7,7 +7,7 @@
     --counterText: red;
     --boxShadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.417);
     --boxShadowInset: 0px 2px 8px -2px rgba(0, 0, 0, 0.417);
-    --overlayBG: rgba(255, 0, 0, 0.403);
+    --overlayBG: rgba(247, 100, 100, 0.655);
 
 }
 
@@ -27,6 +27,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+    
 }
 
 #myVideo {
@@ -44,4 +45,33 @@
     height: 100vh;
     margin: 0;
     background-color: var(--overlayBG);
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0;
+    
+}
+
+.form{
+    width: 28rem;
+    margin: 0 auto;
+}
+
+img{
+    height: 30rem;
+    margin: 3rem 0;
+}
+
+.form-control{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#guess{
+    width: 5.5rem;
+    padding: .5rem;
+    text-align: center;
 }
