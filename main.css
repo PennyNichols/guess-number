@@ -88,7 +88,21 @@
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-weight: 500;
+    background-color: rgb(192, 41, 41);
+    color: white;
 
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 img{
@@ -96,3 +110,21 @@ img{
     margin: 3rem 0;
 }
 
+.attempts, span{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+span{
+    color: rgb(2, 101, 2);
+    font-size: 2rem;
+}
+
+.two{
+    color: yellow;
+}
+
+.one{
+    color: red; 
+}
