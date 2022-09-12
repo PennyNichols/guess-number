@@ -9,7 +9,7 @@ let vid = document.getElementById("myVideo");
 vid.playbackRate = 0.5;
 
 function pickNumber(min, max) {
-	return Math.floor(Math.random() * 100 + 1);
+	return Math.floor(Math.random() * 10 + 1);
 }
 
 console.log(answer);
@@ -25,7 +25,7 @@ function lowerCount(text) {
 const checkGuess = (e) => {
 	e.preventDefault();
 	let guess = document.getElementById("guess").value;
-	if (guess <= 0 || guess > 100) {
+	if (guess <= 0 || guess > 10) {
 		window.alert("Please choose from 1 to 100, inclusively.");
 	} else if (guess == answer) {
 		displayAlert("YOU WIN!!!!");
