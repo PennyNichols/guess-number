@@ -26,7 +26,7 @@ const checkGuess = (e) => {
 	e.preventDefault();
 	let guess = document.getElementById("guess").value;
 	if (guess <= 0 || guess > 10) {
-		window.alert("Please choose from 1 to 100, inclusively.");
+		window.alert("Please choose from 1 to 10, inclusively.");
 	} else if (guess == answer) {
 		displayAlert("YOU WIN!!!!");
 		document.getElementById("image").src = "hat.png";
